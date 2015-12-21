@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digimark</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Include the jQuery Core Library -->        
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <!-- Include the jQuery Mobile library -->
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>    
+        <script src="scripts/screen_one.js" type="text/javascript"></script>
+        <script src="./scripts/screen-two.js" type="text/javascript"></script>
+        <script src="scripts/player.js" type="text/javascript"></script>
+
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/custom-css/css.css" rel="stylesheet" type="text/css"/>
+        <!-- Include jQuery Mobile stylesheets -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    </head>
+    <body>
+        <!--======================================================-->
+        <!--main screen-->
+        <div data-role="page" id="screen-one">
+            <div id="finger-print" class="finger-print">
+                <a href="#screen-two" data-transition="fade"><img src="./assets/PNGs/logo.png" alt="Finger print loader"/></a>
+            </div>            
+        </div>
+        <!--======================================================-->
+        <!--welcome screen-->
+        <div data-role="page" id="screen-two">
+            <!--large screens-->
+            <div id="second-screen" class="second-screen hide-large">
+                <div id="small-white" class="small-white">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit amet, consectetur adipisicing elit amet, consectetur  elit.</p>
+                    <!--welcome in mu company-->
+                    <div id="welcome" class="welcome">
+                        <p>Welcome to</p>
+                    </div>
+                    <div id="company-name" class="company-name">            
+                        <h1>
+                            Digimark
+                        </h1>
+                    </div>
+                    <!--green circle-->
+                    <div>
+                        <a href="#video" data-transition="slideup" title="Play Video">
+                            <div id="green-circle" class="green-circle">                            
+                                <img src="./assets/PNGs/play_icn.png" alt="Arrow Right"/>   
+                            </div>
+                        </a>
+                        <div id="next-chapter" class="next-chapter">
+                            <p style="font-style: italic;">
+                                Next chapter
+                            </p>                
+                        </div>
+                        <div id="arrow-down" class="arrow-down">
+                            <a href="#" title="Visit the next chapter of our story">
+                                <img src="./assets/PNGs/arrow_dwn.png" alt="Arrow Down"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- language switcher-->
+                <div class="de pull-right">
+                    <span>DE</span>
+                </div>
+                <!-- right side controls -->
+                <div  id="right-side-controls" class="right-side-controls">
+                    <ul style="color: white">
+                        <li class="dg-active"></li>
+                        <li class="right-side-controls-circles"></li>
+                        <li class="right-side-controls-circles"></li>
+                        <li class="right-side-controls-circles"></li>
+                        <li class="right-side-controls-circles"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--small screens-->
+            <div class="tablet-portrait">
+                <h1>Tablets</h1> 
+            </div>
+        </div>
+        <!--======================================================-->
+        <!--video screen-->
+        <div data-role="page" id="video">
+
+            <a id="close-video" href="#screen-two"  data-transition="slidedown" class="pull-right close-dg">
+                <img src="assets/PNGs/close_icn.png" alt="Close Video" title="Back to welcome page"/>
+            </a>
+            <div id="video-holder" class="video-holder">
+                <video id="myVideo" width="320" height="240">
+                    <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                <!--controls-->
+                <div id="video-controls" class="video-controls">
+                    <div class="control">
+                        <a href="#" class="btnPlay">
+                            <img id="play-pause-btn" src="assets/PNGs/play_icn.png" alt="Play video button"/>
+                        </a>
+                    </div>
+
+                    <div class="progressTime">
+                        <span class="current"></span> &nbsp;/&nbsp;
+                        <span class="duration"></span>
+                    </div>
+
+                    <div class="progressBar">
+                        <div class="bufferBar">
+                            <div class="timeBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--======================================================-->        
+    </body>
+</html>
