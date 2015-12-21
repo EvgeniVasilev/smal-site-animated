@@ -1,0 +1,261 @@
+@font-face {
+    font-family: nimbus;
+    src: url(./Fonts/Nimbus/nimbussantot-bol-webfont.woff);
+}
+
+.finger-print{
+    background:#252E34; 
+    position: relative; 
+    top: 0; right: 0; 
+    bottom: 0; left: 0; 
+    display: table-cell; 
+    text-align: center; 
+    vertical-align: middle;
+}
+
+#screen-two{
+    background-color: #BA3124;
+}
+
+.right-side-controls{
+    position: absolute; 
+    right: 40px;
+}
+
+.right-side-controls ul{
+    list-style-type: none;
+}
+
+.dg-active{
+    height: 8px;
+    width: 8px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    background-color:#2BD698;
+}
+
+.right-side-controls-circles{
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    margin-left: 2px;
+}
+
+#screen-one{
+    background-color: #252E34;
+}
+
+.finger-print a{
+    cursor: pointer;
+}
+
+.second-screen{
+    background: url("../PNGs/background_1.png") no-repeat center;  
+    background-size: 101% 111%;
+}
+
+.de{
+    height: 30px;
+    width: 30px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50px;
+    border: 1px solid white;
+    content: "DE";
+    color: white;    
+    margin: 35px;
+}
+
+.de span{
+    display: block;
+    margin: 8px auto 8px auto;
+    font-size: 8px;
+}
+
+.small-white{
+    height: 220px;
+    width: 360px;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    left: 192px;
+}
+
+.small-white p{
+    text-align: justify;
+    padding: 30px 25px 0 25px;
+    color: rgb(34,34,34);
+    font-size: 13px;
+}
+
+.green-circle{
+    height: 43px;
+    width: 43px;
+    display: block;   
+    background-color: #2BD698;
+    border-radius: 50px;
+    margin: 16px auto;
+}
+
+.green-circle img{
+    margin: 17px 19px;
+}
+
+.next-chapter p {
+    position: relative;
+    top: -25px;
+    text-align: center;
+}
+
+.arrow-down{
+    position: relative;
+    bottom: 35px;
+    text-align: center;
+}    
+
+.arrow-down a {
+    display: inline-block;
+    text-align: center;
+}
+
+.company-name{
+    position: absolute;
+    top: -132px;
+    left: -8px;
+}
+
+.company-name h1{
+    color: white;
+    font-size: 93px;
+}
+
+.welcome{
+    position: absolute;
+    top: -151px;
+    left: -29px;    
+}
+
+.welcome p{
+    color: white;
+}
+
+.close-dg{
+    background-color: white;
+    height: 41px;
+    width: 40px;
+    border-radius: 100px; 
+    position: absolute;
+    display: table-cell;
+    /*text-align: center;*/
+    vertical-align: middle;
+    top: 15px;
+    right: 80px;
+}
+
+.close-dg img{
+    position: relative;
+    top: 10px;
+    left: 15px;
+    right: 15px;
+    height: 10px;
+    width: 10px;
+}
+
+.tablet-portrait{
+    display: none;
+}
+
+.video-controls{
+   width: 70%;
+   margin: auto;
+}
+
+#myVideo{
+    height: 460px;
+    width: 100%;
+    background-color: black;
+}
+
+#video{
+    background-color: #252E34
+/*    background-color: black;*/
+}
+
+
+.progressBar {
+    position: relative;
+    left: 76px;
+    width: 94%;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.bufferBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100%;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+.timeBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #2BD698;
+}
+
+.video-holder{    
+    width: 98%;
+    height: 550px;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    display: block;
+    /*border: 1px solid red;*/
+}
+
+#play-pause-btn{
+    position: relative;
+    top: 14px;
+    left: 23px;        
+}
+
+.btnPlay{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: #d9534f;
+    display: block;
+    top: 27px;
+    position: relative;
+    left: 2px;
+}
+
+.progressTime{
+    display: block; 
+    position: fixed; 
+    right: 20px; 
+    bottom: 95px; 
+    color: white; 
+    font-size: 15px
+}
+
+@media screen and (max-width: 768px){
+    .hide-large{
+        display: none;
+    }
+
+    .tablet-portrait{
+        display: block;
+    }
+} 
